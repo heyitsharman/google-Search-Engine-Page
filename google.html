@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google search engine</title>
+    <link rel="stylesheet" href="projectfee.css">
+</head>
+<body>
+    <section>
+        <div class="nav">
+            <ul class="r_nav">
+                
+               <li id="item" > <button id="bgcolor"  class="footer_btn"onclick="bgchange()">Colorize</button></li>
+               <li id="item" ><button id="btn_color" class="footer_btn" onclick="btncolor()">Button Style</button></li>
+           
+              
+                  
+            </ul>
+        </div>
+        <script>
+            const buttons = document.getElementsByClassName("footer_btn");
+            const color = ["#8A2BE2","#555555","#4682B4","#40E0D0","#98FF98","#008080","#7DF9FF","#00FFFF","#FFA500","#45A29E","#1F2833","#000080","#98FF98","#E6E6FA","#FFDB58","#FFB6C1","#555555","#FFA500"];
+
+            function btncolor() {
+                    const changecolor = parseInt(Math.random() * color.length);
+                        for (let i = 0; i < buttons.length; i++) {
+                            buttons[i].style.backgroundColor = color[changecolor];
+                            
+                        }
+                    }
+         
+
+        </script>
+        <script defer>
+            const button=document.getElementById("btn");
+            const colors=["black","#45A29E","#1F2833","#000080","#98FF98","#E6E6FA","#FFDB58","#FFB6C1","#555555","#FFA500"];
+            const body=document.querySelector("body");
+            body.style.backgroundColor="#1F2833";
+                    button.addEventListener("click",bgchange);
+                    function bgchange() {
+                            const colorindex= parseInt(Math.random()*colors.length)
+                            body.style.background=colors[colorindex];
+          }
+                   
+             
+        </script>
+        <div class="logo" onclick="font_change()">
+            GOOGLE
+        </div>
+        <script defer>
+            const font_=document.getElementsByClassName("logo");
+            const clr=["black","#8A2BE2","#555555","#4682B4","#40E0D0","#98FF98","#008080","#7DF9FF","#00FFFF","#45A29E","#000080","#98FF98","#E6E6FA","#FFDB58","#FFB6C1","#555555","#FFA500"];
+            function font_change(){
+                const font = parseInt(Math.random() * clr.length);
+                        for (let i = 0; i < clr.length; i++) {
+                            font_[i].style.color = clr[font];
+                            
+                        }
+            }
+
+        </script>
+        
+        <div  class="searchbar" >
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" class="search_bar" name="q" placeholder="Search...">
+                <input type="submit"class="footer_btn" value="Search">
+            
+        
+            
+                
+            
+        </div>
+           
+                
+        </div>
+        <div class="search_buttons">
+            <input type="submit" class="footer_btn" value="Google search" name="submit" id="google"  >
+            
+            <input type="submit" class="footer_btn" id="lucky" value="I'm feeling lucky" name="feeling lucky" >
+            
+        </div>
+       
+       
+
+
+    </section>
+   
+   
+
+   
+    
+     
+    
+</body>
+</html>

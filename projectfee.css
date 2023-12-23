@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: Arial,  sans-serif;
+    background-color: black;
+}
+
+/* Styling of navigation */
+div.nav{
+    display: inline-block;
+}
+ul.r_nav{
+    padding-left: 1000px;
+    display: inline-block;
+    color: black;
+}
+li{
+    display: inline-block;
+     margin-bottom: 10px;
+    padding-bottom:20px;
+}
+li.item{
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+}
+#bgcolor{
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color:#c5c6c7  ;
+    color:black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    left: 80px;
+    position: relative;
+
+}
+#btn_color{
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color:#c5c6c7  ;
+    color:black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    left:100px;
+}
+.apps{
+    padding-top:30px;
+
+}
+img.apps{
+    padding-top: 30px;
+    padding-left: 10px;
+    
+
+}
+
+#appnav{
+    display: inline;
+    padding-bottom: 10px;
+    
+}
+#text{
+    padding-left: 5px;
+}
+/* this is styling of main google logo */
+div.logo{
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    align-content: center;
+    display:flex;
+    font-size: 100px;
+    color: #c5c6c7;
+     top:80px;
+    position: relative;
+    cursor: pointer;
+
+}
+/* styling of searchbar */
+.searchbar{
+    position: relative;
+    width:100%;
+    margin-top:20px;
+    padding-left:300px;
+    padding-bottom: 20px;
+    left:150px;
+    top:80px;
+
+}
+.search_bar{
+    background-color:transparent;
+   
+    backdrop-filter: blur(15px) saturate(180%);
+    z-index: -1; /* Place it behind the button content */
+    transition: backdrop-filter 0.3s ease-in-out;
+
+}
+
+
+.search-box {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 300px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid transparent;
+    color:  #c5c6c7;
+
+    
+}
+
+input[type="submit"] {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color:#c5c6c7  ;
+    color: black;
+    cursor: pointer;}
+.search_buttons{
+position: relative;
+left:500px;
+top:80px;
+}
+input#lucky{
+    left:30px;
+    position: relative;
+}
+
+
